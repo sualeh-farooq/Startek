@@ -14,7 +14,7 @@
     <!-- Profile Picture Avatar with Dropdown Menu-->
       <v-menu
         bottom
-        min-width="200px"
+        min-width="100px"
         rounded
         offset-y
       >
@@ -24,11 +24,9 @@
             x-large
             v-on="on"
           >
-            <v-avatar
-              color="brown"
-              size="48"
-            >
-              <span class="white--text text-h5">UI</span>
+            <v-avatar size="32" >
+              <!-- <span class="white--text text-h7">UI</span> -->
+              <img :src="admin" alt="Admin image">
             </v-avatar>
           </v-btn>
         </template>
@@ -147,6 +145,7 @@
 
 <script>
 import logo from "./assets/comp_logo.png";
+import adminPic from './assets/avatar.jpg'
 
 export default {
   //  Data
@@ -169,6 +168,7 @@ export default {
     inbox: "mdi-message",
     calender: "mdi-calendar-clock",
     companyLogo: logo,
+    admin : adminPic
   }),
   // Functions and Methods
   methods: {
