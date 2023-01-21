@@ -11,9 +11,7 @@
         <v-icon>mdi-heart</v-icon>
       </v-btn>
       <v-btn icon>
-
-
-
+    <!-- Profile Picture Avatar with Dropdown Menu-->
       <v-menu
         bottom
         min-width="200px"
@@ -67,25 +65,27 @@
         </v-card>
       </v-menu>
   
-      
+    <!-- Profile Picture Avatar with Dropdown Menu End-->
       </v-btn>
     </v-app-bar>
     <!-- Top Bar / Header End-->
 
-    <!-- Top box in drawer with logo-->
 
-    <v-navigation-drawer v-model="drawer" app>
+
+
+   
+    <v-navigation-drawer v-model="drawer" app>  <!-- Top box in drawer with logo-->
       <v-sheet color="#303c54" class="pa-4">
         <img class="logo" :src="companyLogo" alt="" />
       </v-sheet>
-      <v-divider></v-divider>
-      <!-- Top box in drawer with logo End-->
+      <v-divider></v-divider><!-- Top box in drawer with logo End-->
+      
 
-      <!-- Navigation list in side drawer-->
-      <v-list>
+
+      <v-list>      <!-- Navigation list in side drawer-->
         <v-list-item-group >
-          <!-- Navigation list Option-->
-          <v-list-item active-class="active">
+         
+          <v-list-item active-class="active"> <!-- Navigation list Option-->
             <v-list-item-icon>
               <v-icon class="icon" v-text="dashboard"></v-icon>
             </v-list-item-icon>
