@@ -1,0 +1,20 @@
+.adminSheet {
+  display: flex !important;
+  border: 2px solid white !important;
+}
+
+.admin {
+  color: white !important;
+  padding-top: 2%;
+  font-size: large;
+}
+
+.logo {
+  width: 70% !important;
+  height: 100% !important;
+  align-items: center !important;
+}
+
+.theme--light.v-navigation-drawer {
+  background-color: #3c4b64 !important;
+}/*# sourceMappingURL=dashboard.css.map */

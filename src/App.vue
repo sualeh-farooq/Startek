@@ -1,11 +1,10 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar app absolute color="yellow">
+    <!-- Top Bar / Header-->
+    <v-app-bar app absolute color="white">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Title</v-toolbar-title>
-
+      <v-toolbar-title>Dashboard</v-toolbar-title>
       <v-spacer></v-spacer>
-
       <v-btn @click="show" icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
@@ -16,35 +15,87 @@
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
     </v-app-bar>
+    <!-- Top Bar / Header End-->
+
+    <!-- Top box in drawer with logo-->
 
     <v-navigation-drawer v-model="drawer" app>
       <v-sheet color="#303c54" class="pa-4">
-        <v-avatar class="mb-4" color="white darken-2" size="64"></v-avatar>
-        <p class="email">Email</p>
+        <img class="logo" :src="companyLogo" alt="" />
       </v-sheet>
       <v-divider></v-divider>
+      <!-- Top box in drawer with logo End-->
+
       <!-- Navigation list in side drawer-->
-      <v-list dense>
-        <v-subheader>REPORTS</v-subheader>
-        <v-list-item-group v-model="selectedItem" color="warning">
-          <v-list-item v-for="(item, i) in items" :key="i">
+      <v-list>
+        <v-list-item-group v-model="selectedItem" color="light">
+      <!-- Navigation list Option-->
+          <v-list-item>
             <v-list-item-icon>
-              <v-icon v-text="item.icon"></v-icon>
+              <v-icon v-text=dashboard></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title v-text="item.text"></v-list-item-title>
+              <v-list-item-title>Dashboard</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          <!-- Navigation list Option-->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon v-text=form></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Form</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <!-- Navigation list Option-->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon v-text=tableIcon></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Data Table</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <!-- Navigation list Option-->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon v-text=chart></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Charts</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <!-- Navigation list Option-->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon v-text=account></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Inbox</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <!-- Navigation list Option-->
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon v-text=account></v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Dashboard</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
         </v-list-item-group>
       </v-list>
+      <!-- Navigation list in side drawer End-->
     </v-navigation-drawer>
   </v-app>
 </template>
 
 <script>
-export default {
-  //  Data 
+import logo from './assets/comp_logo.png'
 
+export default {
+  //  Data
   data: () => ({
     cards: ["Today", "Yesterday"],
     drawer: null,
@@ -54,12 +105,14 @@ export default {
       ["mdi-delete", "Trash"],
       ["mdi-alert-octagon", "Spam"],
     ],
-    selectedItem: 2,
-    items: [
-      { text: "Real-Time", icon: "mdi-clock" },
-      { text: "Audience", icon: "mdi-account" },
-      { text: "Conversions", icon: "mdi-flag" },
-    ],
+    clock: "mdi-clock" ,
+    account: "mdi-account" , 
+    flag : "mdi-flag",
+    dashboard : "mdi-view-dashboard-edit",
+    form : "mdi-form-select",
+    tableIcon : "mdi-table-large",
+    chart : "mdi-chart-bar",
+    companyLogo : logo
   }),
   // Functions and Methods
   methods: {
@@ -74,7 +127,6 @@ export default {
 };
 </script>
 
-
 <style lang="scss" scoped>
-@import "./styles/dashboard.scss"
+@import "./styles/dashboard.css";
 </style>
