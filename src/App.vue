@@ -28,11 +28,11 @@
 
       <!-- Navigation list in side drawer-->
       <v-list>
-        <v-list-item-group v-model="selectedItem" color="light">
-      <!-- Navigation list Option-->
-          <v-list-item>
+        <v-list-item-group >
+          <!-- Navigation list Option-->
+          <v-list-item active-class="active">
             <v-list-item-icon>
-              <v-icon v-text=dashboard></v-icon>
+              <v-icon class="icon" v-text="dashboard"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>Dashboard</v-list-item-title>
@@ -41,7 +41,7 @@
           <!-- Navigation list Option-->
           <v-list-item>
             <v-list-item-icon>
-              <v-icon v-text=form></v-icon>
+              <v-icon class="icon" v-text="form"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>Form</v-list-item-title>
@@ -50,7 +50,7 @@
           <!-- Navigation list Option-->
           <v-list-item>
             <v-list-item-icon>
-              <v-icon v-text=tableIcon></v-icon>
+              <v-icon class="icon" v-text="tableIcon"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>Data Table</v-list-item-title>
@@ -59,7 +59,7 @@
           <!-- Navigation list Option-->
           <v-list-item>
             <v-list-item-icon>
-              <v-icon v-text=chart></v-icon>
+              <v-icon class="icon" v-text="chart"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>Charts</v-list-item-title>
@@ -68,22 +68,21 @@
           <!-- Navigation list Option-->
           <v-list-item>
             <v-list-item-icon>
-              <v-icon v-text=account></v-icon>
+              <v-icon class="icon" v-text="calender"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Inbox</v-list-item-title>
+              <v-list-item-title>Calender</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           <!-- Navigation list Option-->
           <v-list-item>
             <v-list-item-icon>
-              <v-icon v-text=account></v-icon>
+              <v-icon class="icon" v-text="inbox"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Dashboard</v-list-item-title>
+              <v-list-item-title>Inbox</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-
         </v-list-item-group>
       </v-list>
       <!-- Navigation list in side drawer End-->
@@ -92,7 +91,7 @@
 </template>
 
 <script>
-import logo from './assets/comp_logo.png'
+import logo from "./assets/comp_logo.png";
 
 export default {
   //  Data
@@ -105,14 +104,16 @@ export default {
       ["mdi-delete", "Trash"],
       ["mdi-alert-octagon", "Spam"],
     ],
-    clock: "mdi-clock" ,
-    account: "mdi-account" , 
-    flag : "mdi-flag",
-    dashboard : "mdi-view-dashboard-edit",
-    form : "mdi-form-select",
-    tableIcon : "mdi-table-large",
-    chart : "mdi-chart-bar",
-    companyLogo : logo
+    clock: "mdi-clock",
+    account: "mdi-account",
+    flag: "mdi-flag",
+    dashboard: "mdi-view-dashboard-edit",
+    form: "mdi-form-select",
+    tableIcon: "mdi-table-large",
+    chart: "mdi-chart-bar",
+    inbox: "mdi-message",
+    calender: "mdi-calendar-clock",
+    companyLogo: logo,
   }),
   // Functions and Methods
   methods: {

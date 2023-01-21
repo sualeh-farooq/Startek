@@ -17,3 +17,29 @@
 .theme--light.v-navigation-drawer {
     background-color: #3c4b64 !important;
 }
+
+.theme--light.v-expansion-panels .v-expansion-panel {
+    background-color: transparent !important;
+    
+}
+.theme--light.v-expansion-panels .v-expansion-panel::before {
+    box-shadow:  none;
+    align-content: left !important;
+    align-items: left !important;
+}
+
+.v-expansion-panel-header {
+    text-align: left !important;
+    align-items: left !important;
+}
+.v-list-item--link {
+    color: rgb(231, 226, 226) !important;
+}
+
+.active {
+    font-size: xx-small !important;
+}
+
+.icon {
+    color: rgb(231, 226, 226) !important;
+}
