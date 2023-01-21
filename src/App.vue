@@ -17,12 +17,10 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer
-      v-model="drawer"
-      app >
-      <v-sheet color="blue lighten-4" class="pa-4">
-        <v-avatar class="mb-4" color="grey darken-1" size="64"></v-avatar>
-        <div>john@vuetifyjs.com</div>
+    <v-navigation-drawer v-model="drawer" app>
+      <v-sheet color="#303c54" class="pa-4">
+        <v-avatar class="mb-4" color="white darken-2" size="64"></v-avatar>
+        <p class="email">Email</p>
       </v-sheet>
       <v-divider></v-divider>
       <!-- Navigation list in side drawer-->
@@ -36,16 +34,17 @@
             <v-list-item-content>
               <v-list-item-title v-text="item.text"></v-list-item-title>
             </v-list-item-content>
-          </v-list-item> </v-list-item-group>
+          </v-list-item>
+        </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-
   </v-app>
 </template>
 
 <script>
-import Inbox from "./views/Inbox.vue";
 export default {
+  //  Data 
+
   data: () => ({
     cards: ["Today", "Yesterday"],
     drawer: null,
@@ -62,9 +61,7 @@ export default {
       { text: "Conversions", icon: "mdi-flag" },
     ],
   }),
-  components: {
-    Inbox,
-  },
+  // Functions and Methods
   methods: {
     show() {
       this.$swal.fire(
@@ -77,3 +74,7 @@ export default {
 };
 </script>
 
+
+<style lang="scss" scoped>
+@import "./styles/dashboard.scss"
+</style>
