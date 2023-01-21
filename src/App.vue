@@ -3,7 +3,6 @@
     <!-- Top Bar / Header-->
     <v-app-bar app absolute color="white">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Dashboard</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn @click="show" icon>
         <v-icon>mdi-magnify</v-icon>
@@ -12,7 +11,63 @@
         <v-icon>mdi-heart</v-icon>
       </v-btn>
       <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
+
+
+
+      <v-menu
+        bottom
+        min-width="200px"
+        rounded
+        offset-y
+      >
+        <template v-slot:activator="{ on }">
+          <v-btn
+            icon
+            x-large
+            v-on="on"
+          >
+            <v-avatar
+              color="brown"
+              size="48"
+            >
+              <span class="white--text text-h5">UI</span>
+            </v-avatar>
+          </v-btn>
+        </template>
+        <v-card>
+          <v-list-item-content class="justify-center">
+            <div class="mx-auto text-center">
+              <v-avatar
+                color="brown"
+              >
+                <span class="white--text text-h5">UI</span>
+              </v-avatar>
+              <h3>User Initials</h3>
+              <p class="text-caption mt-1">
+                User Initials
+              </p>
+              <v-divider class="my-3"></v-divider>
+              <v-btn
+                depressed
+                rounded
+                text
+              >
+                Edit Account
+              </v-btn>
+              <v-divider class="my-3"></v-divider>
+              <v-btn
+                depressed
+                rounded
+                text
+              >
+                Disconnect
+              </v-btn>
+            </div>
+          </v-list-item-content>
+        </v-card>
+      </v-menu>
+  
+      
       </v-btn>
     </v-app-bar>
     <!-- Top Bar / Header End-->
