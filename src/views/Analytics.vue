@@ -15,7 +15,7 @@ import InboxVue from '@/components/Inbox.vue';
     name: 'AnalyticsVue',
     components : {
       Dashboard,
-      InboxVue
+      InboxVue,
     }
   } 
 </script>

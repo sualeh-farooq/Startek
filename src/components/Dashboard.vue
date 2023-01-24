@@ -131,7 +131,7 @@
         <!-- Navigation list in side drawer End-->
 
       </v-navigation-drawer>
-      {{ Hello }}
+    
     </v-app>
   </template>
   
