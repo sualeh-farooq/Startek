@@ -3,11 +3,13 @@
  <Dashboard />
  <!-- <InboxVue /> -->
  <CardsVue />
+ <DatePicker />
 </div>
 </template>
 
 <script>
 import Dashboard from '@/components/Dashboard.vue';
+
 // import InboxVue from '@/components/Inbox.vue';
 import CardsVue from '@/components/Cards.vue';
   export default {
@@ -18,7 +20,7 @@ import CardsVue from '@/components/Cards.vue';
     components : {
       Dashboard,
       // InboxVue,
-      CardsVue
+      CardsVue,
     }
   } 
 </script>

@@ -5,8 +5,7 @@
           <v-col
             v-for="n in 20"
             :key="n"
-            cols="4"
-          >
+            cols="4" >
             <v-card height="200"></v-card>
           </v-col>
         </v-row>
