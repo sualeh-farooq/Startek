@@ -1,12 +1,15 @@
+@import './variable.scss';
+
+
 .adminSheet {
     display: flex !important;
-    border: 2px solid white !important;
+    border: 2px solid $dashboard-text-color !important;
 }
 
 .admin {
-    color: white !important;
+    color: $dashboard-text;
     padding-top: 2%;
-    font-size: large;
+    font-size: $dashboard-fontsize;
 }
 
 .logo {
@@ -15,7 +18,7 @@
     align-items: center !important;
 }
 .theme--light.v-navigation-drawer {
-    background-color: #3c4b64 !important;
+    background-color: $fade-blue !important;
 }
 
 .theme--light.v-expansion-panels .v-expansion-panel {
@@ -34,11 +37,6 @@
 }
 .v-list-item--link {
     color: rgb(231, 226, 226) !important;
-}
-
-
-.active {
-    font-size: xx-small !important;
 }
 
 .icon {

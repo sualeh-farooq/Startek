@@ -4,7 +4,7 @@
 }
 
 .admin {
-  color: white !important;
+  color: white;
   padding-top: 2%;
   font-size: large;
 }
@@ -36,10 +36,6 @@
 
 .v-list-item--link {
   color: rgb(231, 226, 226) !important;
-}
-
-.active {
-  font-size: xx-small !important;
 }
 
 .icon {

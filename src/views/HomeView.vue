@@ -1,14 +1,13 @@
 <template>
-  <div>
-    <h1>Main Page</h1>
-  </div>
+ <Dashboard />
 </template>
 
 <script>
-
+import Dashboard from '@/components/Dashboard.vue';
   export default {
     name: 'HomeView',
-
- 
-  }
+    components : {
+      Dashboard
+    }
+  } 
 </script>

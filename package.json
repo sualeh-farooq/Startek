@@ -1,5 +1,5 @@
 {
-  "name": "admin_panel",
+  "name": "vue_dashboard",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/font": "^7.1.96",
     "@mdi/js": "^7.1.96",
+    "ant-design-vue": "^3.2.15",
     "chart.js": "^4.2.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
