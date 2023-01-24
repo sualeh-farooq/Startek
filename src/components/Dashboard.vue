@@ -5,10 +5,10 @@
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-spacer></v-spacer>
         <v-btn @click="show" icon>
-          <v-icon>mdi-magnify</v-icon>
+          <v-icon>mdi-bell-ring-outline</v-icon>
         </v-btn>
         <v-btn icon>
-          <v-icon>mdi-heart</v-icon>
+          <v-icon>mdi-view-dashboard</v-icon>
         </v-btn>
         <v-btn icon>
       <!-- Profile Picture Avatar with Dropdown Menu-->
@@ -21,8 +21,9 @@
           <template v-slot:activator="{ on }">
             <v-btn
               icon
-              x-large
+              large
               v-on="on"
+              class="adminIcon"
             >
               <v-avatar size="32" >
                 <!-- <span class="white--text text-h7">UI</span> -->
@@ -30,34 +31,23 @@
               </v-avatar>
             </v-btn>
           </template>
+
+                <!--List Menu after open -->
           <v-card>
-            <v-list-item-content class="justify-center">
-              <div class="mx-auto text-center">
-                <v-avatar
-                  color="brown"
-                >
-                  <span class="white--text text-h5">UI</span>
-                </v-avatar>
-                <h3>User Initials</h3>
-                <p class="text-caption mt-1">
-                  User Initials
-                </p>
-                <v-divider class="my-3"></v-divider>
-                <v-btn
-                  depressed
-                  rounded
-                  text
-                >
-                  Edit Account
-                </v-btn>
-                <v-divider class="my-3"></v-divider>
-                <v-btn
-                  depressed
-                  rounded
-                  text
-                >
-                  Disconnect
-                </v-btn>
+            <v-list-item-content>
+              <div>
+                <v-btn  class="acc-btn" disabled>Account</v-btn>
+               <br />  
+               
+                <v-btn class="menu-btn" text > <v-icon v-text="bell" small class="mr-3">  </v-icon>  Updates   </v-btn>
+                 <br />                
+                 <v-btn class="menu-btn" text > <v-icon v-text="inboxOutline" small class="mr-3">  </v-icon>  Messages   </v-btn>
+                <br />  
+                <v-btn class="menu-btn" text > <v-icon v-text="task" small class="mr-3">  </v-icon>  Tasks   </v-btn>
+                <br />  
+                <v-btn class="menu-btn" text > <v-icon v-text="accountOutline" small class="mr-3">  </v-icon>  Profile   </v-btn>
+                <br />  
+                <v-btn class="menu-btn" text > <v-icon v-text="logout" small class="mr-3">  </v-icon>  Logout   </v-btn>
               </div>
             </v-list-item-content>
           </v-card>
@@ -169,7 +159,12 @@
       inbox: "mdi-message",
       calender: "mdi-calendar-clock",
       companyLogo: logo,
-      admin : adminPic
+      admin : adminPic ,
+      bell : "mdi-bell-alert-outline",
+      inboxOutline : 'mdi-message-outline' ,
+      task : 'mdi-file-document-edit-outline',
+      accountOutline : 'mdi-shield-account-outline',
+      logout : 'mdi-logout'
     }),
     // Functions and Methods
     methods: {

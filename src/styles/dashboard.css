@@ -40,4 +40,39 @@
 
 .icon {
   color: rgb(231, 226, 226) !important;
+}
+
+.menu-btn::before {
+  background-color: gray !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.menu-btn {
+  color: gray !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.adminIcon:active,
+.adminIcon:focus,
+.adminIcon::before {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.theme--light.v-btn.v-btn--disabled.v-btn--has-bg {
+  background-color: #ebedef !important;
+  width: 100% !important;
+  color: black !important;
+  padding: 0% !important;
+  position: relative !important;
+  top: -12px !important;
+  border-bottom-left-radius: 0% !important;
+  border-bottom-right-radius: 0% !important;
+}
+
+.v-btn__content {
+  text-align: left !important;
 }/*# sourceMappingURL=dashboard.css.map */
