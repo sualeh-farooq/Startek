@@ -12,6 +12,7 @@
     "@mdi/font": "^7.1.96",
     "@mdi/js": "^7.1.96",
     "ant-design-vue": "^3.2.15",
+    "ant-design-vue-v2": "^1.0.8",
     "chart.js": "^4.2.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",

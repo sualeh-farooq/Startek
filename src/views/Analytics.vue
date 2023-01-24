@@ -1,14 +1,15 @@
 <template>
   <div>
  <Dashboard />
- <InboxVue />
- <!-- <h1>Analytics Page goes here</h1> -->
+ <!-- <InboxVue /> -->
+ <CardsVue />
 </div>
 </template>
 
 <script>
 import Dashboard from '@/components/Dashboard.vue';
-import InboxVue from '@/components/Inbox.vue';
+// import InboxVue from '@/components/Inbox.vue';
+import CardsVue from '@/components/Cards.vue';
   export default {
     data : ()=>({
         Hello : 'Hello World',
@@ -16,7 +17,8 @@ import InboxVue from '@/components/Inbox.vue';
     name: 'AnalyticsVue',
     components : {
       Dashboard,
-      InboxVue,
+      // InboxVue,
+      CardsVue
     }
   } 
 </script>

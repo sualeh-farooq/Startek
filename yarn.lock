@@ -1887,6 +1887,29 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
+ant-design-vue-v2@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/ant-design-vue-v2/-/ant-design-vue-v2-1.0.8.tgz#23349f0a1d8af040e2edf755ff83ddeab8fd3a9b"
+  integrity sha512-58WrxswEuIziEr5rpl0p/8oIg7aGxhg+TyeqGkMGoey11Ub/k9PVoL7zBiuKM4nuZ860A4QoYL7hCZqflGNZsw==
+  dependencies:
+    "@ant-design/colors" "^6.0.0"
+    "@ant-design/icons-vue" "^6.1.0"
+    "@babel/runtime" "^7.10.5"
+    "@ctrl/tinycolor" "^3.4.0"
+    "@simonwep/pickr" "~1.8.0"
+    array-tree-filter "^2.1.0"
+    async-validator "^4.0.0"
+    dayjs "^1.10.5"
+    dom-align "^1.12.1"
+    dom-scroll-into-view "^2.0.0"
+    lodash "^4.17.21"
+    lodash-es "^4.17.15"
+    resize-observer-polyfill "^1.5.1"
+    scroll-into-view-if-needed "^2.2.25"
+    shallow-equal "^1.0.0"
+    vue-types "^3.0.0"
+    warning "^4.0.0"
+
 ant-design-vue@^3.2.15:
   version "3.2.15"
   resolved "https://registry.yarnpkg.com/ant-design-vue/-/ant-design-vue-3.2.15.tgz#eab52877fa08a9e4c8cb311ea479a90203dcb302"
