@@ -11,10 +11,3 @@
 .card {
   margin: 0 auto !important;
 }/*# sourceMappingURL=analytics.css.map */
-
-
-@media only screen and (max-width: 600px) {
-  .an-bg {
-    margin-top: -100% !important;
-  }
-}

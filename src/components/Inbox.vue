@@ -16,7 +16,7 @@
 
               <v-list two-line>
                 <template >
-                  <v-list-item  v-for="n in 6" :key="n">
+                  <v-list-item  v-for="n in 2" :key="n">
                     <v-list-item-avatar color="grey darken-1">
                     </v-list-item-avatar>
 
@@ -30,7 +30,7 @@
                   </v-list-item>
 
                   <v-divider
-                    v-if="n !== 6"
+                    v-if="n !== 2"
                     :key="`divider-${n}`"
                     inset
                   ></v-divider>

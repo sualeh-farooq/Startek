@@ -2,6 +2,7 @@
   <div>
  <Dashboard />
  <InboxVue />
+ <!-- <h1>Analytics Page goes here</h1> -->
 </div>
 </template>
 

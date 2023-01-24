@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
 import NotFound from '../views/NotFound.vue'
-import Analytics from '../views/Analytics.vue'
-import Cards from '../views/cards.vue'
+// import Analytics from '../views/Analytics.vue'
+// import Cards from '../views/cards.vue'
 
 Vue.use(VueRouter)
 
@@ -11,17 +11,17 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component : HomeView
+    component : ()=>import('../views/HomeView.vue')
   },
   {
     path: '/dashboard',
     name: 'dashboard',
-    component : Analytics
+    component : ()=>import('../views/Analytics.vue')
   },
    {
     path: "/cards",
     name : 'CardsVue',
-    component : Cards
+    component : ()=>import('../views/HomeView.vue')
    },
    {
     path: '/:pathMatch(.*)*',
