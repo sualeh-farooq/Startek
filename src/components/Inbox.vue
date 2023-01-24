@@ -1,10 +1,7 @@
 <template>
     <div>
         <v-main>
-      <v-container
-        class="py-8 px-6"
-        fluid
-      >
+      <v-container >
         <v-row>
           <v-col
             v-for="card in cards"
@@ -16,7 +13,7 @@
 
               <v-list two-line>
                 <template >
-                  <v-list-item  v-for="n in 2" :key="n">
+                  <v-list-item  v-for="n in 8" :key="n">
                     <v-list-item-avatar color="grey darken-1">
                     </v-list-item-avatar>
 
