@@ -129,13 +129,16 @@
           </v-list-item-group>
         </v-list>
         <!-- Navigation list in side drawer End-->
+
       </v-navigation-drawer>
+      {{ Hello }}
     </v-app>
   </template>
   
   <script>
   import logo from "../assets/comp_logo.png";
   import adminPic from '../assets/avatar.jpg'
+  // import InboxVue from "./Inbox.vue";
   
   export default {
     name : 'DashboardVue',
@@ -176,6 +179,10 @@
         );
       },
     },
+    components : {
+      // InboxVue
+    },
+    props : ['Hello']
   };
   </script>
   
