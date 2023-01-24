@@ -10,7 +10,6 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    // component : import( '../views/HomeView.vue')
     component : HomeView
   },
   {
@@ -18,21 +17,11 @@ const routes = [
     name: 'dashboard',
     component : Analytics
   },
-   {
+  {
     path: '/:pathMatch(.*)*',
     name : 'NotFound',
     component : NotFound
    }
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   component: () => import( '../views/AboutView.vue')
-  // },
-  // {
-  //   path: '/inbox',
-  //   name: 'inbox',
-  //   component: () => import( '../views/Inbox.vue')
-  // }
 ]
 
 const router = new VueRouter({
