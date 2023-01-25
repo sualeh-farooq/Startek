@@ -1,7 +1,7 @@
 <template>
     <v-app id="inspire">
       <!-- Top Bar / Header-->
-      <v-app-bar app absolute color="white">
+      <v-app-bar app absolute color="white" class="top_nav">
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-spacer></v-spacer>
         <v-btn @click="show" icon>
@@ -67,6 +67,8 @@
           <img class="logo" :src="companyLogo" alt="" />
         </v-sheet>
         <v-divider></v-divider><!-- Top box in drawer with logo End-->
+
+        
         
   
   

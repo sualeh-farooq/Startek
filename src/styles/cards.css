@@ -1,3 +1,6 @@
+.v-main .v-main__wrap .container .main_div .chart_third_row .col {
+  margin: 3% 0% !important;
+}
 .v-main .v-main__wrap .container .main_div .chart_second_row .col .v-card .apexcharts-canvas .apexcharts-toolbar {
   display: none !important;
 }

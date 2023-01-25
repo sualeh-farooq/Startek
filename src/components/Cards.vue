@@ -47,14 +47,23 @@
             ></v-card>
           </v-col>
         </v-row>
+        <v-row class="chart_third_row">
+          <v-col>
+            <DataTable class="db_table" />
+          </v-col>
+        </v-row>
       </div>
     </v-container>
   </v-main>
 </template>
 
 <script>
+import DataTable from '@/components/DataTable'
 export default {
   name: "CompChrts",
+  components : {
+    DataTable
+  },
   data: () => ({
     series: [
       {
