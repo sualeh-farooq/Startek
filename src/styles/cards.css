@@ -1,1 +1,5 @@
-/*# sourceMappingURL=cards.css.map */
+.v-main .v-main__wrap .container .chart_upper_row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  background-color: red !important;
+}/*# sourceMappingURL=cards.css.map */
