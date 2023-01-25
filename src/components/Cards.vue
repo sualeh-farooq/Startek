@@ -1,13 +1,16 @@
 <template>
 <v-main >
       <v-container >
-        <div >
+        <div class="main_div">
         <v-row class="chart_upper_row"  >
           <v-col
             v-for="n in 1"
-            :key="n"
-            cols="4" >
-            <v-card height="auto" width="auto"> <apexchart width="100%" height="100%" type="bar" :options="chartOptions" :series="series"></apexchart></v-card>
+            :key="n" >
+            <v-card class="mx auto" max-width="344" outlined> <apexchart width="100%" height="100%" type="bar" :options="chartOptions" :series="series"></apexchart></v-card>
+            <v-card class="mx auto" max-width="344" outlined> <apexchart width="100%" height="100%" type="bar" :options="chartOptions" :series="series"></apexchart></v-card>
+            <v-card class="mx auto" max-width="344" outlined> <apexchart width="100%" height="100%" type="bar" :options="chartOptions" :series="series"></apexchart></v-card>
+
+
              </v-col>
             </v-row>
           </div>
@@ -39,5 +42,5 @@ export default {
 
 
 <style> 
-@import '../styles/cards.scss';
+@import '../styles/cards.css';
 </style>
