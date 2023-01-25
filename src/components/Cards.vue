@@ -4,7 +4,7 @@
       <div class="main_div">
         <v-row class="chart_upper_row">
           <v-col v-for="n in 1" :key="n">
-            <v-card class="mx auto" max-width="344" outlined
+            <v-card class="mx auto" max-width="d344" outline
               ><apexchart
                 type="line"
                 height="100%"
@@ -59,10 +59,12 @@
 
 <script>
 import DataTable from '@/components/DataTable'
+// import Calendar from '@/components/Calendar'
 export default {
   name: "CompChrts",
   components : {
-    DataTable
+    DataTable,
+    // Calendar
   },
   data: () => ({
     series: [

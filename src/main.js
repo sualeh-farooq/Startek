@@ -5,6 +5,8 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import '@mdi/font/css/materialdesignicons.min.css'
 import '@mdi/font/css/materialdesignicons.css'
+import '../node_modules/vuetify/dist/vuetify.min.css'
+import '../node_modules/vuetify/dist/vuetify.css'
 import 'sweetalert2/dist/sweetalert2.min.css';
 import "ant-design-vue/dist/antd.css"; // or 'ant-design-vue/dist/antd.less'
 import sweetalert from './plugins/sweetalert'

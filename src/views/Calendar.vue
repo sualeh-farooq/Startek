@@ -1,26 +1,31 @@
 <template>
-    <div>
-   <Dashboard />
-   <v-col>
-    <v-row>
-      <Calendar />
-    </v-row>
-   </v-col>
+  <div>
+    <Dashboard />
+    <v-main>
+      <v-container>
+        <div class="main_div">
+          <v-row class="chart_upper_row">
+            <v-col v-for="n in 1" :key="n"> 
+            <Calendar />
+            </v-col>
+          </v-row>
+        </div>
+      </v-container>
+    </v-main>
   </div>
-  </template>
-  
-  <script>
-  import Dashboard from '@/components/Dashboard.vue';
-  import Calendar from '@/components/Calendar.vue';
-    export default {
-      data : ()=>({
-          Hello : 'Hello World',
-      }),
-      name: 'CalendarVue',
-      components : {
-        Dashboard,
-        Calendar
-      }
-    } 
-  </script>
-  
+</template>
+
+<script>
+import Dashboard from "@/components/Dashboard.vue";
+import Calendar from "@/components/Calendar.vue";
+export default {
+  data: () => ({
+    Hello: "Hello World",
+  }),
+  name: "CalendarVue",
+  components: {
+    Dashboard,
+    Calendar,
+  },
+};
+</script>
