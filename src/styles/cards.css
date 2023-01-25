@@ -1,3 +1,6 @@
+.v-main .v-main__wrap .container .main_div .chart_second_row .col .v-card .apexcharts-canvas .apexcharts-toolbar {
+  display: none !important;
+}
 .v-main .v-main__wrap .container .main_div .chart_upper_row {
   display: flex !important;
   flex-wrap: wrap !important;
@@ -19,6 +22,5 @@
     display: flex !important;
     justify-content: center !important;
     flex-wrap: wrap !important;
-    background-color: yellow !important;
   }
 }/*# sourceMappingURL=cards.css.map */

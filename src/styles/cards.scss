@@ -4,6 +4,17 @@
   .v-main__wrap {
     .container {
       .main_div {
+        .chart_second_row{
+            .col{
+                .v-card{
+                    .apexcharts-canvas {
+                        .apexcharts-toolbar {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
         .chart_upper_row {
           //   background-color: rgb(224, 217, 217)(238, 238, 238) !important;
           display: flex !important;
@@ -39,7 +50,6 @@
             display: flex !important;
             justify-content: center !important; 
             flex-wrap: wrap !important;
-            background-color: yellow !important;
           }
         }
       }
