@@ -51,6 +51,10 @@
   box-shadow: none !important;
 }
 
+.v-list-item__content a {
+  color: white !important;
+}
+
 .theme--light.v-btn.v-btn--disabled.v-btn--has-bg {
   background-color: #ebedef !important;
   width: 100% !important;

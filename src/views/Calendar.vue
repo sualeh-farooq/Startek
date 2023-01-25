@@ -12,7 +12,7 @@
       data : ()=>({
           Hello : 'Hello World',
       }),
-      name: 'CalenderView',
+      name: 'CalendarVue',
       components : {
         Dashboard,
         InboxVue

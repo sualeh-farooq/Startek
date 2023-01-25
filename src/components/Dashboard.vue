@@ -78,7 +78,7 @@
                 <v-icon class="icon" v-text="dashboard"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Dashboard</v-list-item-title>
+               <router-link to="/dashboard">  <v-list-item-title>  Dashboard</v-list-item-title> </router-link>
               </v-list-item-content>
             </v-list-item>
             <!-- Navigation list Option-->
@@ -87,7 +87,7 @@
                 <v-icon class="icon" v-text="form"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Form</v-list-item-title>
+                <router-link to="/forms">    <v-list-item-title>  Forms</v-list-item-title> </router-link>
               </v-list-item-content>
             </v-list-item>
             <!-- Navigation list Option-->
@@ -96,7 +96,7 @@
                 <v-icon class="icon" v-text="tableIcon"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Data Table</v-list-item-title>
+                <router-link to="/tables">    <v-list-item-title>  Data Table</v-list-item-title> </router-link>
               </v-list-item-content>
             </v-list-item>
             <!-- Navigation list Option-->
@@ -105,7 +105,7 @@
                 <v-icon class="icon" v-text="chart"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Charts</v-list-item-title>
+                <router-link to="/charts">  <v-list-item-title>  Charts</v-list-item-title> </router-link>
               </v-list-item-content>
             </v-list-item>
             <!-- Navigation list Option-->
@@ -114,7 +114,7 @@
                 <v-icon class="icon" v-text="calender"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Calender</v-list-item-title>
+                <router-link to="/calendar">  <v-list-item-title>  Calender</v-list-item-title> </router-link>
               </v-list-item-content>
             </v-list-item>
             <!-- Navigation list Option-->
@@ -123,7 +123,7 @@
                 <v-icon class="icon" v-text="inbox"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
-                <v-list-item-title>Inbox</v-list-item-title>
+                <router-link to="/inbox">  <v-list-item-title>  Inbox</v-list-item-title> </router-link>
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>

@@ -8,6 +8,8 @@ import '@mdi/font/css/materialdesignicons.css'
 import 'sweetalert2/dist/sweetalert2.min.css';
 import "ant-design-vue/dist/antd.css"; // or 'ant-design-vue/dist/antd.less'
 import sweetalert from './plugins/sweetalert'
+import VueApexCharts from 'vue-apexcharts'
+Vue.use(VueApexCharts)
 
 
 Vue.config.productionTip = false

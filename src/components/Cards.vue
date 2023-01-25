@@ -2,12 +2,12 @@
 <v-main >
       <v-container>
         <v-row>
-          <v-col
+          <!-- <v-col
             v-for="n in 20"
             :key="n"
-            cols="4" >
-            <v-card height="200"></v-card>
-          </v-col>
+            cols="4" > -->
+            <v-card height="200" width="200">Card</v-card>
+            
         </v-row>
       </v-container>
     </v-main>
@@ -21,7 +21,5 @@ export default {
 
 
 <style> 
-.v-main__wrap {
-    flex-wrap: wrap !important;
-}
+@import '../styles/cards.scss';
 </style>

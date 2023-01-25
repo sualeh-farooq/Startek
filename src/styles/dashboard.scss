@@ -57,6 +57,12 @@
 }
 
 
+.v-list-item__content {
+    a {
+        color: $dashboard-text-color !important;
+    }
+}
+
 
 .theme--light.v-btn.v-btn--disabled.v-btn--has-bg  {
     background-color: $admin-nav-head-bg !important;

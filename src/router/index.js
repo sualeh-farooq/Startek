@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import HomeView from '../views/HomeView.vue'
 import NotFound from '../views/NotFound.vue'
-// import Analytics from '../views/Analytics.vue'
-// import Cards from '../views/cards.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +19,31 @@ const routes = [
     path: "/cards",
     name : 'CardsVue',
     component : ()=>import('../views/HomeView.vue')
+   },
+   {
+    path: "/forms",
+    name : 'FormVue',
+    component : ()=>import('../views/Form.vue')
+   },
+   {
+    path: "/charts",
+    name : 'ChartVue',
+    component : ()=>import('../views/AllCharts.vue')
+   },
+   {
+    path: "/calendar",
+    name : 'CalenderVue',
+    component : ()=>import('../views/Calendar.vue')
+   },
+   {
+    path: "/inbox",
+    name : 'Inbox',
+    component : ()=>import('../views/AllChats.vue')
+   },
+   {
+    path: "/tables",
+    name : 'TablesVue',
+    component : ()=>import('../views/Tables.vue')
    },
    {
     path: '/:pathMatch(.*)*',
