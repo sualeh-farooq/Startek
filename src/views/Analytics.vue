@@ -1,13 +1,13 @@
 <template>
   <div>
  <Dashboard />
- <!-- <InboxVue /> -->
  <CardsVue />
 </div>
 </template>
 
 <script>
 import Dashboard from '@/components/Dashboard.vue';
+
 
 import CardsVue from '@/components/Cards.vue';
   export default {
@@ -18,6 +18,7 @@ import CardsVue from '@/components/Cards.vue';
     components : {
       Dashboard,
       CardsVue,
+    
     }
   } 
 </script>

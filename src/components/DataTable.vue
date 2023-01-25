@@ -1,10 +1,8 @@
 <template>
     <v-data-table
-      dense
       :headers="headers"
       :items="desserts"
-      item-key="name"
-      class="elevation-1"
+      class="elevation-5"
     ></v-data-table>
   </template>
 
@@ -97,8 +95,6 @@ export default {
     headers: [
       {
         text: 'Dessert (100g serving)',
-        align: 'start',
-        sortable: false,
         value: 'name',
       },
       { text: 'Calories', value: 'calories' },
@@ -110,3 +106,8 @@ export default {
   }),
 }
 </script>
+
+
+<style>
+@import '../styles/DataTable.css';
+</style>
