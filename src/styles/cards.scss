@@ -4,23 +4,22 @@
   .v-main__wrap {
     .container {
       .main_div {
-        .row {
-          background-color: rgb(224, 217, 217)(238, 238, 238) !important;
+        .chart_upper_row {
+          //   background-color: rgb(224, 217, 217)(238, 238, 238) !important;
           display: flex !important;
           flex-wrap: wrap !important;
-
           .col {
             display: flex !important;
             flex-wrap: wrap !important;
             justify-content: space-between !important;
-            
+
             .v-card {
-                .apexcharts-canvas{
-                    .apexcharts-toolbar {
-                        display: none !important;
-                    }
-                    
+              margin: 10px !important;
+              .apexcharts-canvas {
+                .apexcharts-toolbar {
+                  display: none !important;
                 }
+              }
             }
           }
         }
@@ -30,3 +29,20 @@
 }
 
 
+
+@media only screen and (max-width: 672px) {
+  .v-main {
+    .v-main__wrap {
+      .container {
+        .main_div {
+          .chart_upper_row {
+            display: flex !important;
+            justify-content: center !important; 
+            flex-wrap: wrap !important;
+            background-color: yellow !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,13 +1,24 @@
-.v-main .v-main__wrap .container .main_div .row {
-  background-color: rgb(224, 217, 217) 238, 238, 238 !important;
+.v-main .v-main__wrap .container .main_div .chart_upper_row {
   display: flex !important;
   flex-wrap: wrap !important;
 }
-.v-main .v-main__wrap .container .main_div .row .col {
+.v-main .v-main__wrap .container .main_div .chart_upper_row .col {
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: space-between !important;
 }
-.v-main .v-main__wrap .container .main_div .row .col .v-card .apexcharts-canvas .apexcharts-toolbar {
+.v-main .v-main__wrap .container .main_div .chart_upper_row .col .v-card {
+  margin: 10px !important;
+}
+.v-main .v-main__wrap .container .main_div .chart_upper_row .col .v-card .apexcharts-canvas .apexcharts-toolbar {
   display: none !important;
+}
+
+@media only screen and (max-width: 672px) {
+  .v-main .v-main__wrap .container .main_div .chart_upper_row {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    background-color: yellow !important;
+  }
 }/*# sourceMappingURL=cards.css.map */
