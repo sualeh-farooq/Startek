@@ -95,6 +95,15 @@
             <!-- Navigation list Option-->
             <v-list-item>
               <v-list-item-icon>
+                <v-icon class="icon" v-text="kanban"></v-icon>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <router-link to="/kanban">    <v-list-item-title>  Kanban Board</v-list-item-title> </router-link>
+              </v-list-item-content>
+            </v-list-item>
+            <!-- Navigation list Option-->
+            <v-list-item>
+              <v-list-item-icon>
                 <v-icon class="icon" v-text="tableIcon"></v-icon>
               </v-list-item-icon>
               <v-list-item-content>
@@ -169,7 +178,8 @@
       inboxOutline : 'mdi-message-outline' ,
       task : 'mdi-file-document-edit-outline',
       accountOutline : 'mdi-shield-account-outline',
-      logout : 'mdi-logout'
+      logout : 'mdi-logout',
+      kanban :  'mdi-bulletin-board'
     }),
     // Functions and Methods
     methods: {

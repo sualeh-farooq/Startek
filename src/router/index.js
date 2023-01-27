@@ -46,6 +46,11 @@ const routes = [
     component : ()=>import('../views/Tables.vue')
    },
    {
+    path: "/kanban",
+    name : 'Kanban',
+    component : ()=>import('../views/KanbanBoard.vue')
+   },
+   {
     path: '/:pathMatch(.*)*',
     name : 'NotFound',
     component : NotFound
